@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="邮        箱：" 
+        android:textColor="#000000"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_email"
+        android:layout_alignBottom="@+id/textView_email"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView_email"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="用于密码找回" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_email"
+        android:layout_below="@+id/editText_email"
+        android:ems="10"
+        android:inputType="phone" 
+        android:hint="请输入手机号码"/>
+
+    <TextView
+        android:id="@+id/textView_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText_phone"
+        android:text="用  户  名："
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editText_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_UserName"
+        android:layout_toRightOf="@+id/textView_email"
+        android:ems="10" 
+        android:hint="英文字符 8到12个字长"/>
+
+    <CheckBox
+        android:id="@+id/checkBox_Agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_Zhuce"
+        android:layout_marginTop="16dp"
+        android:text="我已经阅读并接受相关服务条款" />
+
+    <TextView
+        android:id="@+id/textView_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_phoneNumber"
+        android:layout_below="@+id/editText_UserName"
+        android:text="密    码："
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/editText_phone"
+        android:text="电话号码："
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_pass"
+        android:layout_alignBottom="@+id/textView_pass"
+        android:layout_alignLeft="@+id/editText_UserName"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:hint="请输入8到12位密码"/>
+
+    <TextView
+        android:id="@+id/textView_passwordResure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password"
+        android:layout_toLeftOf="@+id/editText_password"
+        android:text="密码确认："
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editText_passwordResure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_password"
+        android:layout_below="@+id/textView_pass"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请再次输入您的密码" />
+
+    <Button
+        android:id="@+id/button_cancelZhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_Zhuce"
+        android:layout_alignBottom="@+id/button_Zhuce"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@+id/button_Zhuce"
+        android:background="#FFB6C1"
+        android:text="取消"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button_Zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/checkBox_Agreement"
+        android:layout_below="@+id/editText_passwordResure"
+        android:layout_marginTop="60dp"
+        android:background="#FFB6C1"
+        android:text="注  册"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+</RelativeLayout>
